@@ -1,0 +1,49 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    height: 748px;
+    width: 646px;
+    margin: auto;
+    background-color: rgba(249, 201, 226, 0.384);
+}
+
+.card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 74.11px;
+    width: 340.73px;
+    margin: auto;
+
+}
+
+.title{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 1rem;
+    padding-top: 10px;
+}
+.title::before, .title::after {
+    content: "";
+    height: 2px;
+    background-color: green;
+    display: block;
+
+}
+
+.title{
+    background-color: rgb(25, 73, 25);
+    height: 1px;
+    width: 100%;
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+}
