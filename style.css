@@ -4,19 +4,23 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Inter';font-size: 22px;
+}
+
 
 .container{
     height: 748px;
     width: 646px;
     margin: auto;
-    background-color: rgba(249, 201, 226, 0.384);
+    /* background-color: rgba(249, 201, 226, 0.384); */
 }
 
 .card-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 74.11px;
+    height: auto;
     width: 340.73px;
     margin: auto;
 
@@ -27,7 +31,8 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     column-gap: 1rem;
-    padding-top: 10px;
+    padding: 0;
+    white-space: nowrap;
 }
 .title::before, .title::after {
     content: "";
@@ -39,11 +44,86 @@
 
 .title{
     background-color: rgb(25, 73, 25);
-    height: 1px;
+    height: auto;
     width: 100%;
 }
 
 .card{
-    height: 100%;
+    margin-top: 1rem;
+    height: auto;
     width: 100%;
+    padding: 1rem;
+    border: 1px solid rgba(61, 59, 60, 0.384);
+    border-radius: 5px;
+}
+
+.card-body-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.bundle-details{
+    display: flex; 
+}
+#bundle{
+    accent-color: green;
+    cursor: pointer;
+    height: auto;
+}
+
+.discount-details{
+    margin-left:auto;
+    font-size: 14px;
+    text-align: end;
+}
+
+h6{
+    margin: 5px;
+}
+
+table{
+    font-size: 9.9px;
+    margin-left: 10px;
+
+}
+
+td{
+    padding: 2px;
+}
+
+select{
+    padding: 5px;
+}
+
+
+
+/* cart-button */
+.shipping-details{
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    margin: 1.2rem 0 1.2rem 0;
+}
+
+
+.cart-button{
+    background-color: #04561ed2;
+    width: 100%;
+    padding: 18px;
+    font-weight: 600;
+    font-size: large;
+    color: white;
+    border-radius: 5px 5px 5px 0px;
+    text-align: center;
+}
+
+.collapse{
+    display: none;
+}
+
+.active{
+    background-color: rgba(181, 228, 181, 0.223);
+    border-color: #007F61;
 }
