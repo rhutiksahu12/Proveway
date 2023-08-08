@@ -22,11 +22,11 @@ body {
     justify-content: center;
     height: auto;
     width: 340.73px;
-    margin: auto;
+    margin: 10px auto;
 
 }
 
-.title{
+/* .title{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
@@ -46,6 +46,22 @@ body {
     background-color: rgb(25, 73, 25);
     height: auto;
     width: 100%;
+} */
+.title-lines{
+    display: flex;
+    align-items: center;
+}
+
+.line{
+    flex-grow: 1;
+    height: 1px;
+    background-color: rgb(218, 208, 208);
+}
+
+.title{
+    margin: 0 10px;
+    size: 18px;
+    color: green;
 }
 
 .card{
